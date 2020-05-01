@@ -4,11 +4,14 @@
   "description": "Get album art for an artist on iTunes",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "express": "^4.16.3",
-    "billboard-top-100": "^2.0.8"
+    "billboard-top-100": "^2.0.8",
+    "snyk": "^1.316.1"
   },
   "engines": {
     "node": "8.x"
@@ -17,5 +20,6 @@
     "node",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
